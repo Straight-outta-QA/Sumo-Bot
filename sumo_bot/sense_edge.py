@@ -8,7 +8,4 @@ def is_on_edge(reflected_light):
         raise ValueError('The light sensor cannot read a value that is greater than 100.')
 
 
-    if (reflected_light <= EDGE_REFLECTION):
-        return True
-    else: 
-        return False
+    return reflected_light <= EDGE_REFLECTION
