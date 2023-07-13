@@ -6,7 +6,7 @@ SLOW = 100
 DIST = 60
 
 def set_speed(ultrasonicReading):
-    if (ultrasonicReading < 0):
+    if (ultrasonicReading <= 0):
         raise ValueError('The ultrasonic sensor cannot read a value that is less than 0.')
 
     if (ultrasonicReading > 2550):
