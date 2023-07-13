@@ -2,8 +2,8 @@ from context import react_to_opponent, sense_edge
 import pytest
 
 # Testing parameters; found through paritioning the input space of the light sensor
-FULL_SPEED = 100
-HALF_SPEED = 50
+FULL_SPEED = 200
+HALF_SPEED = 100
 
 INVALID_DIST = -1
 INVALID_DIST_2 = 2551
@@ -12,8 +12,8 @@ FAR_DIST = 61 # The robot should travel at full speed if the opponent is >25mm a
 
 INVALID_REFLECTED_LIGHT = -1
 INVALID_REFLECTED_LIGHT_2 = 101
-SIGNAL_TURN = 25 # The robot turns if it senses a reflected light intensity <=25
-NO_TURN_SIGNAL = 26
+SIGNAL_TURN = 30 # The robot turns if it senses a reflected light intensity <=30
+NO_TURN_SIGNAL = 31
 
 # Test react_to_opponent.py
 def test_react_to_opponent_invalid_dist():
